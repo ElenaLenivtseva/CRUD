@@ -6,3 +6,36 @@
     height: 100vh;
     background: #faf9f6;
 }
+.btn {
+    margin-top: 1rem;
+    border: none;
+    background: #1d4ed8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #ccc;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.form-group input, .form-group textarea, .form-group select {
+    background-repeat: 1px solid black;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.2rem;
+}
