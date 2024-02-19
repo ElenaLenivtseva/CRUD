@@ -5,11 +5,11 @@ import Modal from './components/Modal';
 
 function App() {
   const [modalOpen, setModalOpen] =useState(false)
-  const rows = [
-    {page: "Page 1", description: 'this is the first page', status: 'live'},
+  const [rows, setRows] = useState(
+    [{page: "Page 1", description: 'this is the first page', status: 'live'},
     {page: "Page 2", description: 'this is the second page', status: 'draft'},
-    {page: "Page 3", description: 'this is the third page', status: 'error'},
-  ]
+    {page: "Page 3", description: 'this is the third page', status: 'error'}]
+  )
   return (
     <div className="App">
       <Table rows={rows}/>
