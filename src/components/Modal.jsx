@@ -2,8 +2,8 @@ import React from "react";
 import {useState} from "react";
 import "./Modal.css";
 
-const Modal = ({closeModal, onSubmit}) => {
-  const [formState, setFormState] = useState({
+const Modal = ({closeModal, onSubmit, defaultValue}) => {
+  const [formState, setFormState] = useState(defaultValue || {
     page: '',
     description: '',
     status: 'live'
